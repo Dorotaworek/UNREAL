@@ -1,0 +1,14 @@
+﻿  Źródło.cpp
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(15): error C2563: niezgodność w liście formalnych parametrów
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(15): warning C4551: wywołaniu funkcji brakuje listy argumentów
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(16): error C3861: "GetGuessAndPrintBack": identyfikatora nie odnaleziono
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(17): error C3861: "GetGuessAndPrintBack": identyfikatora nie odnaleziono
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(38): error C2672: „getline”: nie znaleziono zgodnej przeciążonej funkcji
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(38): error C2780: "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)": oczekuje się 2 argumentów - dostarczono 1
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\string(160): note: zobacz deklarację „std::getline”
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(38): error C2780: "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)": oczekuje się 3 argumentów - dostarczono 1
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\string(149): note: zobacz deklarację „std::getline”
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(38): error C2780: "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)": oczekuje się 2 argumentów - dostarczono 1
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\string(129): note: zobacz deklarację „std::getline”
+c:\users\dorot\documents\github\unreal\project2\project2\źródło.cpp(38): error C2780: "std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)": oczekuje się 3 argumentów - dostarczono 1
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\string(76): note: zobacz deklarację „std::getline”
