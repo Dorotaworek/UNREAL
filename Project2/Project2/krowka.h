@@ -7,7 +7,7 @@ using int32 = int;
 struct krowka 
 {
 	int32 Bulls = 0;
-	int32 COWS = 0;
+	int32 Cows = 0;
 
 };
 
@@ -33,12 +33,12 @@ public:
 	int32 GetHiddenWordLength() const;
 	
 	bool IsGameWon() const;
-	EWordStatus CheckGuessValidity(FString) const;
+	EGuessStatus CheckGuessValidity(FString) const;
 
 	void Reset();
-	krowka SubmitValidGuess(FString)
+	krowka SubmitValidGuess(FString);
 
-private
+private:
 	int32 MyMaxTries = 5;
 	int32 MyCurrentTry = 1;
 	FString MyHiddenWord;

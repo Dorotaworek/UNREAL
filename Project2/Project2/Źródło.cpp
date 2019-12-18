@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "krowka.h"
-
+#include "krowka1.cpp"
+using namespace std;
 using FText = std::string;
 using int32 = int;
 
@@ -29,7 +30,7 @@ int32 main()
 }
 
 // wprowadzenie
-void PrintIntro() const
+void PrintIntro() 
 {
 	std::cout << "welcome to bulls and cows game";
 	std::cout << "can you guess the " << BCGame.GetHiddenWordLength();
@@ -44,7 +45,7 @@ void PlayGame()
 	BCGame.Reset();
 	int32 MaxTries = BCGame.GetMaxTries();
 
-	for (int32 cout = 1; count <= MaxTries; count++) {
+	for (int32 count = 1; count <= MaxTries; count++) {
 		FText Guess = GetGuess();
 
 		EGuessStatus Status = BCGame.CheckGuessValidity(Guess);
@@ -55,9 +56,9 @@ void PlayGame()
 			break;
 		}
 
-		krowka BCGame.SubmitGuess(Guess);
-		std::cout << "Bulls =:" << krowka1.bulls;
-		std::cout << "Cows =:" << krowka1.cows; << "\n\n"; 
+		krowka BCGameSubmitGuess(Guess);
+		std::cout << "Bulls =:" << krowka1.Bulls;
+		std::cout << "Cows =:" << krowka1.Cows; << "\n\n";
 	}
 }
 
@@ -68,7 +69,7 @@ FText GetValidGuess()
 	EGuessStatus Status = EGuessStatus::Invalid_Status;
 	do {
 		int32 CurrentTry = BCGame.GetCurrentTry();
-		std::cout << "Try" << CurretTry << "Enter your guess";
+		std::cout << "Try" << CurrentTry << "Enter your guess";
 		std::getline(std::cin >> Guess);
 
 		EGuessStatus Status = BCGame.CheckGuessValidity(Guess);
